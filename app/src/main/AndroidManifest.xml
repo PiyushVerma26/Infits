@@ -14,17 +14,21 @@
         android:theme="@style/Theme.INFITS"
         tools:targetApi="31">
         <activity
-            android:name=".View.Achivements"
+            android:name=".View.AchievementsCompleted"
             android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".View.Tracker"
+            android:name=".View.Achivements"
             android:exported="true"/>
+
+        <activity
+            android:name=".View.Tracker"
+            android:exported="true" />
         <activity
             android:name=".View.RegisterActivity"
             android:exported="false" />

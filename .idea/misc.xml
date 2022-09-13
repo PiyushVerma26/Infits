@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.114" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/btnback.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/eatback.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/edit.xml" value="0.123" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/progressbar.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/splash.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/achievements.xml" value="0.264" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_achievements_completed.xml" value="0.1685185185185185" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_achivements.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_main.xml" value="0.18518518518518517" />

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B9AFB"
+    tools:context=".View.AchievementsCompleted">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/design"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/design"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/design"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/trophy"
+        android:layout_width="291dp"
+        android:layout_height="276dp"
+        android:layout_below="@id/design"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-85dp"
+        android:src="@drawable/trophy"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerCongrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trophy"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nats"
+            android:text="@string/congratulations"
+            android:textColor="@color/white"
+            android:textSize="37sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="@font/nats"
+            android:padding="5dp"
+            android:text="@string/john_wayne"
+            android:textColor="@color/white"
+            android:textSize="37sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:fontFamily="@font/nats"
+            android:padding="5dp"
+            android:text="@string/you_have_reached_100_clients"
+            android:textColor="@color/white"
+            android:textSize="37sp"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerCongrats"
+        android:background="@drawable/btnback"
+        android:backgroundTint="@color/white"
+        android:layout_centerInParent="true"
+        android:text="@string/share"
+        android:textColor="#4040F2"
+        android:textSize="30sp"
+        android:fontFamily="@font/nats"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nats"
+        android:layout_below="@id/btn"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:text="@string/teaminfits"
+        android:textColor="@color/white"
+        android:textSize="37sp"
+        tools:ignore="TextContrastCheck" />
+
+
+
+</RelativeLayout>

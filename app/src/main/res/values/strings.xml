@@ -34,5 +34,10 @@
     <string name="reached">Reached</string>
     <string name="_25">25</string>
     <string name="clients">Clients</string>
+    <string name="congratulations">Congratulations!!</string>
+    <string name="john_wayne">John Wayne</string>
+    <string name="you_have_reached_100_clients">You have reached 100 clients</string>
+    <string name="share">Share</string>
+    <string name="teaminfits">\@teaminfits</string>
 
 </resources>
