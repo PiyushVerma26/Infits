@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.Tracker">
+    <TextView
+        android:id="@+id/mealTracker"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:fontFamily="@font/nats"
+        android:text="@string/meal_tracker"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mealTracker"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/tracker"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/dateYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/_13_september_2022"
+            android:textColor="#5C5C5C"
+            android:textSize="22sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calenderPicker"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mealLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calenderPicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/nats"
+            android:gravity="center_vertical"
+            android:text="@string/today_s_meal"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/mealTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/eatback"
+                android:fontFamily="@font/nats"
+                android:text="@string/breakfast"
+                android:textAllCaps="false"
+                android:textColor="#76A5FF"
+                android:textSize="21sp"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/eatback"
+                android:fontFamily="@font/nats"
+                android:text="@string/launch"
+                android:textAllCaps="false"
+                android:textColor="#76A5FF"
+                android:textSize="21sp"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/snacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/eatback"
+                android:fontFamily="@font/nats"
+                android:text="@string/snack"
+                android:textAllCaps="false"
+
+                android:textColor="#76A5FF"
+                android:textSize="21sp"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/eatback"
+                android:fontFamily="@font/nats"
+                android:text="@string/dinner"
+                android:textAllCaps="false"
+                android:textColor="#76A5FF"
+                android:textSize="21sp"
+                tools:ignore="TextContrastCheck" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment"
+                android:name="hello.tech.infits.Fragments.BreakfastFragmnet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
