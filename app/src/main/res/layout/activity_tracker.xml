@@ -47,11 +47,16 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/calenderPicker"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="95dp"
         android:layout_below="@id/date"
         android:layout_marginTop="5dp"
         android:backgroundTint="@color/white"
         android:elevation="10dp">
+        <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
 
 
     </androidx.cardview.widget.CardView>
@@ -153,7 +158,8 @@
                 android:id="@+id/fragment"
                 android:name="hello.tech.infits.Fragments.BreakfastFragmnet"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_breakfast_fragmnet" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 

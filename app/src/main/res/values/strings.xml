@@ -39,5 +39,20 @@
     <string name="you_have_reached_100_clients">You have reached 100 clients</string>
     <string name="share">Share</string>
     <string name="teaminfits">\@teaminfits</string>
+    <string name="earn_money">Earn Money</string>
+    <string name="by_refer">By Refer</string>
+    <string name="m1234sdneee322">m1234sdneee322</string>
+    <string name="copy">Copy</string>
+    <string name="invite_a_friend">Invite A friend</string>
+    <string name="tongkun_lee">Tongkun Lee</string>
+    <string name="facebook">Facebook</string>
+    <string name="invite">Invite</string>
+    <string name="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique sem integer eros, velit vitae aliquam libero commodo. Id posuere elementum consectetur purus massa consequat. Morbi risus purus libero.</string>
+    <string name="about_us">About Us</string>
+    <string name="congratulation">Congratulations!</string>
+    <string name="earned">You have just earned $</string>
+    <string name="_50">50</string>
+    <string name="message">One of your friends has joined by your referral code. Do more invitations to earn more.</string>
+    <string name="invite_another">Invite Another</string>
 
 </resources>

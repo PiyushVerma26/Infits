@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.AboutActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/about_us"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nats"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:layout_width="366dp"
+        android:layout_height="373dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/about"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+  <TextView
+      android:layout_width="295dp"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:layout_gravity="center"
+      android:lineHeight="20dp"
+      android:text="@string/about"
+      android:textColor="@color/black"
+      android:fontFamily="@font/nats"
+      android:textAlignment="center"
+      android:textSize="18sp"
+      android:layout_marginTop="-30dp"
+      tools:ignore="UnusedAttribute" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
