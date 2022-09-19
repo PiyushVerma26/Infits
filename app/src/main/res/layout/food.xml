@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="350dp"
+    android:layout_margin="15dp"
     android:backgroundTint="#F9F9F9"
     app:cardCornerRadius="20dp">
 
@@ -41,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="-20dp"
             android:fontFamily="@font/nats"
             android:text="@string/calories_299_protien_4g_carbs_36g_fat_12g"
             android:textColor="#868686 "

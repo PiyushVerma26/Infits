@@ -85,8 +85,9 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="338dp"
+            android:layout_height="245dp"
             android:layout_gravity="center"
-            android:layout_height="245dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
             android:id="@+id/dot1"

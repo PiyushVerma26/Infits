@@ -27,15 +27,12 @@ public class Tracker extends AppCompatActivity {
         setContentView(binding.getRoot());
         SimpleDateFormat dateFormat=new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
         String date= dateFormat.format(new Date());
-
         binding.dateYear.setText(date);
         dayScrollDatePicker=binding.datePicker;
         dayScrollDatePicker.getSelectedDate(date1 -> {
-            String selectedDate = Objects.requireNonNull(date1).toString();
-            binding.dateYear.setText(selectedDate);
+            String SelectedDate=dateFormat.format(Objects.requireNonNull(date1));
+            binding.dateYear.setText(SelectedDate);
         });
-
-
         binding.breakfast.setOnClickListener(v -> {
           BreakfastFragmnet fragment=new BreakfastFragmnet();
           getSupportFragmentManager().beginTransaction().replace(R.id.fragment,fragment). commit();

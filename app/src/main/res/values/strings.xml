@@ -54,5 +54,16 @@
     <string name="_50">50</string>
     <string name="message">One of your friends has joined by your referral code. Do more invitations to earn more.</string>
     <string name="invite_another">Invite Another</string>
+    <string name="in_morning">In morning</string>
+    <string name="mon">Mon</string>
+    <string name="save_plan">Save Plan</string>
+    <string name="after_break">After Break</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="thu">Thu</string>
+    <string name="open_fragment">Open Fragment</string>
 
 </resources>

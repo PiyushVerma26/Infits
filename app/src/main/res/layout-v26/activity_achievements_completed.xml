@@ -42,36 +42,38 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="201dp"
-            android:layout_height="68dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/nats"
             android:text="@string/congratulations"
             android:textColor="@color/white"
-            android:textSize="32sp"
+            android:textSize="37sp"
             tools:ignore="TextContrastCheck" />
 
         <TextView
-            android:layout_width="163dp"
-            android:layout_height="76dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="-30dp"
             android:fontFamily="@font/nats"
-
+            android:padding="5dp"
             android:text="@string/john_wayne"
             android:textColor="@color/white"
-            android:textSize="36sp"
+            android:textSize="37sp"
             tools:ignore="TextContrastCheck" />
 
-        <TextView
-            android:layout_width="317dp"
-            android:layout_height="63dp"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="-30dp"
+            android:layout_marginTop="-50dp"
+            android:autoSizeMinTextSize="16sp"
             android:fontFamily="@font/nats"
+            android:padding="5dp"
             android:text="@string/you_have_reached_100_clients"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="37sp"
             tools:ignore="TextContrastCheck" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -79,25 +81,26 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/containerCongrats"
-        android:layout_centerInParent="true"
         android:background="@drawable/btnback"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/nats"
+        android:layout_centerInParent="true"
         android:text="@string/share"
         android:textColor="#4040F2"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:fontFamily="@font/nats"/>
 
     <TextView
-        android:layout_width="131dp"
-        android:layout_height="63dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nats"
         android:layout_below="@id/btn"
         android:layout_centerInParent="true"
-        android:fontFamily="@font/nats"
+        android:padding="5dp"
         android:text="@string/teaminfits"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="37sp"
         tools:ignore="TextContrastCheck" />
 
 
