@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Metrices">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/calenderPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:navigationIcon="@drawable/ic_baseline_menu_24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nats"
+            android:text="@string/client_profile"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/notification"
+            tools:ignore="ContentDescription" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calenderPicker"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#F5F5F5"
+            app:layout_constraintTop_toBottomOf="@id/calenderPicker"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <!--           1st row 1st box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="151dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stepsgrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/steps"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:alpha="0.2"
+                            android:layout_gravity="center"
+                            android:src="@drawable/foot"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <ProgressBar
+                            android:id="@+id/StepsProgress"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:progressDrawable="@drawable/stepspregress" />
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-65dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_500"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/steps"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/goal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/foot"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/_1100"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/steps"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           1st row 2nd box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hearrategrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/heart_rate"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:alpha="0.1"
+                            android:src="@drawable/heart"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <ProgressBar
+                            android:id="@+id/HeartProgress"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:progressDrawable="@drawable/stepspregress" />
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-65dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_800"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/bpm"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/heart"
+                            android:layout_marginEnd="5dp"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-8dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/arrowup"
+                                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/_120"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp"
+                                    tools:ignore="TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/bpm"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp"
+                                    tools:ignore="TextContrastCheck" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-20dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/arrowdown"
+                                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/_120"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp"
+                                    tools:ignore="TextContrastCheck" />
+
+                                <TextView
+                                    tools:ignore="TextContrastCheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/bpm"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                       <androidx.appcompat.widget.LinearLayoutCompat
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+                       </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           **********************************-->
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <!--           1st row 1st box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/watergrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            tools:ignore="TextContrastCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/water"
+                            android:textColor="@color/white"
+                            android:textSize="23sp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-10dp">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:alpha="0.2"
+                                android:src="@drawable/waterdrops"
+                                android:scaleType="centerCrop"
+                                android:layout_gravity="center"
+                                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                            <ProgressBar
+                                android:id="@+id/WaterProgress"
+                                style="@style/Widget.AppCompat.ProgressBar"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                android:progressDrawable="@drawable/stepspregress" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-65dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                tools:ignore="TextContrastCheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/_500"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                tools:ignore="TextContrastCheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/ml"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal">
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            tools:ignore="TextContrastCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/goal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="13dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/waterdrops"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            tools:ignore="TextContrastCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_1100"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            tools:ignore="TextContrastCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/ml"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           1st row 2nd box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sleepsgrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/sleep"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-10dp">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:alpha="0.2"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/sleep"
+                                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                            <ProgressBar
+                                android:id="@+id/SleepProgress"
+                                style="@style/Widget.AppCompat.ProgressBar"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                android:progressDrawable="@drawable/stepspregress" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-65dp"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/_8"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    tools:ignore="TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/hr"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp"
+                                    tools:ignore="TextContrastCheck" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/_35"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    tools:ignore="TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/nats"
+                                    android:text="@string/min"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp"
+                                    tools:ignore="TextContrastCheck" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal">
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/goal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="13dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/sleep"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_8"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/hours"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck,TooManyViews" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           **********************************-->
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                tools:ignore="TooManyViews">
+                <!--           1st row 1st box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/weightgrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/weight_track"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-10dp">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:alpha="0.2"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/weighttrack"
+                                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                            <ProgressBar
+                                android:id="@+id/WeightTrackProgress"
+                                style="@style/Widget.AppCompat.ProgressBar"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                android:progressDrawable="@drawable/stepspregress" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-65dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/_80"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/kg"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                tools:ignore="TextContrastCheck" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal">
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/goal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="13dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/kcal"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_80"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/kg"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           1st row 2nd box-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/caloriegrad"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/calorie_track"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-10dp">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:alpha="0.2"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/kcal"
+                                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                            <ProgressBar
+                                android:id="@+id/CalorieProgress"
+                                style="@style/Widget.AppCompat.ProgressBar"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                android:progressDrawable="@drawable/stepspregress" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-65dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/_800"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/nats"
+                                android:text="@string/kcal"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                tools:ignore="TextContrastCheck" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal">
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/goal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kcal"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/_1100"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nats"
+                            android:text="@string/kcal"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!--           **********************************-->
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/neverback">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.1"
+                    android:src="@drawable/met"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/julius_sans_one"
+                    android:lineHeight="22dp"
+                    android:text="@string/where"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    tools:targetApi="p" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

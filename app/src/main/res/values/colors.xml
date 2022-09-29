@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="selected">#FFA381</color>
+    <color name="dietChart">#9C74F5</color>
+    <color name="metrices">#E375B3</color>
+    <color name="tracker">#76A5FF</color>
+    <color name="health">#1FB688</color>
+    <color name="chats">#FFA381</color>
 </resources>

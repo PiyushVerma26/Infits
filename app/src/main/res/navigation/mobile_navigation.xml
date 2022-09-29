@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="hello.tech.infits.Fragments.DashBoardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashboard_to_Chats"
+            app:destination="@id/chats" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chats"
+        android:name="hello.tech.infits.Fragments.ChatsFragment"
+        android:label="@string/chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_Chats_to_live"
+            app:destination="@id/live" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/live"
+        android:name="hello.tech.infits.Fragments.LiveFragment"
+        android:label="@string/live"
+        tools:layout="@layout/fragment_live" >
+        <action
+            android:id="@+id/action_live_to_mail"
+            app:destination="@id/mail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mail"
+        android:name="hello.tech.infits.Fragments.MailFragment"
+        android:label="@string/mail"
+        tools:layout="@layout/fragment_mail" >
+        <action
+            android:id="@+id/action_mail_to_Recipies"
+            app:destination="@id/Recipies" />
+    </fragment>
+    <fragment
+        android:id="@+id/allRecipies"
+        android:name="hello.tech.infits.Fragments.RecepiesFragment"
+        android:label="@string/all_recipies"
+        tools:layout="@layout/fragment_recepies" >
+        <action
+            android:id="@+id/action_Recipies_to_newRecipie"
+            app:destination="@id/newRecipies" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newRecipies"
+        android:name="hello.tech.infits.Fragments.NewRecipieFragment"
+        android:label="@string/add_new"
+        tools:layout="@layout/fragment_new_recipie" >
+        <action
+            android:id="@+id/action_Recipies_to_settings2"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="hello.tech.infits.Fragments.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settings_to_appointments"
+            app:destination="@id/appointments" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointments"
+        android:name="hello.tech.infits.Fragments.AppointmentsFragment"
+        android:label="@string/appointment"
+        tools:layout="@layout/fragment_appointments" >
+        <action
+            android:id="@+id/action_appointments_to_clientList"
+            app:destination="@id/clientList" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientList"
+        android:name="hello.tech.infits.Fragments.ClientListFragment"
+        android:label="@string/client"
+        tools:layout="@layout/fragment_client_list" />
+</navigation>

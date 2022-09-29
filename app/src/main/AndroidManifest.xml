@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="hello.tech.infits">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +16,10 @@
         android:theme="@style/Theme.INFITS"
         tools:targetApi="31">
         <activity
-            android:name=".View.DialougeActivity"
-            android:exported="true" />
+            android:name=".View.ViewAll"
+            android:exported="false" />
         <activity
-            android:name=".View.DietChart"
+            android:name=".View.GraphClient"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +27,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".View.Metrices"
+            android:exported="true" />
+        <activity
+            android:name=".View.ClientDetail"
+            android:exported="true" />
+        <activity
+            android:name=".View.HomeNavigation"
+            android:exported="true"
+            android:label="@string/title_activity_home_navigation"
+            android:theme="@style/Theme.INFITS.NoActionBar" />
+        <activity
+            android:name=".View.DialougeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".View.DietChart"
+            android:exported="true" />
         <activity
             android:name=".View.AboutActivity"
             android:exported="true" />

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/dashboard"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/chats"
+            android:icon="@drawable/chat"
+            android:title="@string/chats"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/live"
+            android:icon="@drawable/live"
+            android:title="@string/live"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/mail"
+            android:icon="@drawable/mail"
+            android:title="@string/mail"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/Recipies"
+            android:icon="@drawable/recipie"
+            android:title="@string/recipies"
+            android:menuCategory="secondary">
+
+            <menu>
+                <item android:id="@+id/allRecipies"
+                    android:icon="@drawable/all"
+                    android:title="@string/all_recipies" />
+
+                <item android:id="@+id/newRecipies"
+                    android:icon="@drawable/ic_baseline_add_box_24"
+                    android:title="@string/add_new" />
+
+            </menu>
+        </item>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_baseline_settings_suggest_24"
+            android:title="@string/setting"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/appointments"
+            android:icon="@drawable/iappointment"
+            android:title="@string/appointment"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/clientList"
+            android:icon="@drawable/client"
+            android:title="@string/client"
+            android:menuCategory="secondary"/>
+    </group>
+</menu>

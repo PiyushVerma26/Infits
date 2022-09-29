@@ -3,6 +3,4 @@
     <item android:state_selected="true" android:drawable="@drawable/dayeelected"/>
     <item android:state_pressed="true" android:drawable="@drawable/dayeelected"/>
     <item android:drawable="@color/white"/>
-
-
 </selector>
