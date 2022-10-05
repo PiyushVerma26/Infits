@@ -16,8 +16,11 @@
         android:theme="@style/Theme.INFITS"
         tools:targetApi="31">
         <activity
+            android:name=".View.Report"
+            android:exported="true" />
+        <activity
             android:name=".View.ViewAll"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".View.GraphClient"
             android:exported="true">

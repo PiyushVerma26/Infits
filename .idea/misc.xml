@@ -35,16 +35,21 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/heart.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/heartback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/heartrateback.xml" value="0.1465" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/invitebtn.xml" value="0.1065" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/layoutback.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/loginback.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/metrics.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/metricsback.xml" value="0.1415" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/metricsbox.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/neverback.xml" value="0.1365" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/person.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/personalboxselected.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/plus.xml" value="0.1" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/progressbar.xml" value="0.123" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/reportdrawable.xml" value="0.1465" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/resturant.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/searchback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/searchbackview.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/side_nav_bar.xml" value="0.1415" />
@@ -55,6 +60,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/stepsgrad.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/stepspregress.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/textclentcolor.xml" value="0.1415" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/textcolormetrices.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/textpersonalcolor.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/tracker.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/trackerback.xml" value="0.1415" />
@@ -74,6 +80,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_achivements.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_client_detail.xml" value="0.21037998146431883" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_cliet_profile.xml" value="0.21944444444444444" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_detailed.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_dialouge.xml" value="0.15104166666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_diet_chart.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_graph_client.xml" value="0.2" />
@@ -86,6 +93,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_refer_achievement_dialouge_fragment_button.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_refer_achievements.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_register.xml" value="0.2604166666666667" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_report.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_start_actvity.xml" value="0.16" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_tracker.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_view_all.xml" value="0.22530996152201796" />
@@ -99,12 +107,14 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_diet_breakfast.xml" value="0.2604166666666667" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_launch.xml" value="0.2604166666666667" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_new_recipie.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_snacks.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/invite.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/nav_header_home_navigation.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/nav_header_navigation.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/pastlayout.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/plus.xml" value="0.2734375" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/refer_achievements.xml" value="0.152" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/reportlayout.xml" value="0.22445489525438223" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/slide.xml" value="0.176" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/menu/home_navigation.xml" value="0.16510416666666666" />

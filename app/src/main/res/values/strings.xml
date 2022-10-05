@@ -145,5 +145,11 @@
     <string name="_180_ml">180 ml</string>
     <string name="_9_10_am">9:10 AM</string>
     <string name="back">Back</string>
+    <string name="client_calories_report">Client Calories Report</string>
+    <string name="activity">Activity</string>
+    <string name="snacks">Snacks</string>
+    <string name="_370_kcal">370 Kcal</string>
+    <string name="_19_jun_2021">19 Jun 2021</string>
+    <string name="_5_30_pm">5:30 PM</string>
 
 </resources>

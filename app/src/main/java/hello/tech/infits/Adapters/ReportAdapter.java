@@ -1,7 +1,6 @@
 package hello.tech.infits.Adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import hello.tech.infits.Modals.GraphModal;
+import hello.tech.infits.Modals.ReportModal;
 import hello.tech.infits.R;
-import hello.tech.infits.View.Report;
 
-public class GraphAdapter extends RecyclerView.Adapter<GraphAdapter.viewHolder> {
-    ArrayList<GraphModal> list;
+public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.viewHolder> {
+    ArrayList<ReportModal> list;
     Context context;
 
-    public GraphAdapter(ArrayList<GraphModal> list, Context context) {
+    public ReportAdapter(ArrayList<ReportModal> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -28,22 +26,17 @@ public class GraphAdapter extends RecyclerView.Adapter<GraphAdapter.viewHolder> 
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.pastlayout, parent, false);
+        View view= LayoutInflater.from(context).inflate(R.layout.reportlayout,parent,false);
         return new viewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        GraphModal modal = list.get(position);
-        holder.month.setText(modal.getMonth());
+        ReportModal modal = list.get(position);
+        holder.type.setText(modal.getType());
+        holder.kcal.setText(modal.getKcal());
         holder.date.setText(modal.getDate());
-        holder.item.setText(modal.getItem());
-        holder.quantity.setText(modal.getQuantity());
         holder.time.setText(modal.getTime());
-        holder.itemView.setOnClickListener(v -> {
-            Intent intent=new Intent(context, Report.class);
-            context.startActivity(intent);
-        });
     }
 
     @Override
@@ -51,15 +44,14 @@ public class GraphAdapter extends RecyclerView.Adapter<GraphAdapter.viewHolder> 
         return list.size();
     }
 
-    public static class viewHolder extends RecyclerView.ViewHolder {
-        TextView month, date, item, quantity, time;
+    public class viewHolder extends RecyclerView.ViewHolder {
+        TextView type, kcal, date, time;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            month = itemView.findViewById(R.id.month);
+            type = itemView.findViewById(R.id.type);
+            kcal = itemView.findViewById(R.id.kcal);
             date = itemView.findViewById(R.id.date);
-            item = itemView.findViewById(R.id.item);
-            quantity = itemView.findViewById(R.id.quantity);
             time = itemView.findViewById(R.id.time);
         }
     }

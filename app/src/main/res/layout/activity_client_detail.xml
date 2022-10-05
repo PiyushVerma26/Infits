@@ -91,8 +91,9 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/info"
-        app:layout_constraintStart_toStartOf="parent">
+        tools:ignore="SpeakableTextPresentCheck">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -104,87 +105,22 @@
                 android:layout_height="165dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
-                <!--Personal Info-->
-                <androidx.appcompat.widget.LinearLayoutCompat
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="190dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/personalboxselected"
-                    android:orientation="vertical">
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/personalboxselected"
+                    tools:ignore="ImageContrastCheck" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/personal_info"
-                        android:textColor="@drawable/textpersonalcolor"
-                        android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/person"
-                        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/name_plan_etc"
-                        android:textColor="@drawable/textpersonalcolor"
-                        android:textSize="20sp" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <!--            Diet Chart-->
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/dietchartselector"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/diet_chart"
-                        android:textColor="@drawable/dietcharttext"
-                        android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/dietlist"
-                        tools:ignore="ContentDescription" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/plan_your_diet"
-                        android:textColor="@drawable/dietcharttext"
-                        android:textSize="20sp" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/dietchartselector" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
             <!--        Second row-->
@@ -193,87 +129,22 @@
                 android:layout_height="165dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
-                <!--Metrices-->
-                <androidx.appcompat.widget.LinearLayoutCompat
+
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/metricsback"
-                    android:orientation="vertical">
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/metricsbox"
+                    tools:ignore="ImageContrastCheck" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/metrics"
-                        android:textColor="@drawable/textcolormetrices"
-                        android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/chartmetrics"
-                        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/check_progress"
-                        android:textColor="@drawable/textcolormetrices"
-                        android:textSize="20sp" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <!--           Tracker-->
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="15dp"
-
-                    android:layout_marginEnd="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/trackerbox"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/tracker"
-                        android:textColor="@drawable/trackertextselected"
-                        android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/trackerspoon"
-                        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/track_meal"
-                        android:textColor="@drawable/trackertextselected"
-                        android:textSize="20sp" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/trackerbox"
+                    tools:ignore="ImageContrastCheck" />
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -281,119 +152,36 @@
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="165dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
-                <!--Health Detail-->
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="165dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/healthdetailbox"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/health_details"
-                        android:textColor="@drawable/healthtextselected"
-                        android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/health"
-                        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/form_document"
-                        android:textColor="@drawable/healthtextselected"
-                        android:textSize="20sp" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <!--            chats-->
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/chatbox"
-                    android:orientation="vertical">
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/healthdetailbox"
+                    tools:ignore="ImageContrastCheck" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/chats"
-                        android:textColor="@drawable/chattext"
-                        android:textSize="24sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/chatselected"
+                    tools:ignore="ImageContrastCheck" />
 
-                    <ImageView
-                        android:layout_width="66dp"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-12dp"
-                        android:src="@drawable/chatslogo"
-                        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-10dp"
-                        android:fontFamily="@font/nats"
-                        android:text="@string/chat_with"
-                        android:textColor="@drawable/chattext"
-                        android:textSize="20sp" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <FrameLayout
+            <ImageView
                 android:layout_width="290dp"
                 android:layout_height="110dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/logo"
                 android:layout_margin="25dp"
                 android:layout_weight="1"
-                android:background="@drawable/neverback">
-
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="95dp"
-                    android:layout_gravity="center"
-                    android:alpha="0.1"
-                    android:src="@drawable/never"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:layout_width="220dp"
-                    android:layout_height="83dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="15dp"
-
-                    android:layout_marginEnd="15dp"
-                    android:fontFamily="@font/julius_sans_one"
-                    android:lineHeight="26dp"
-                    android:text="@string/never"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    tools:targetApi="p" />
-            </FrameLayout>
+                android:src="@drawable/img_7" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 

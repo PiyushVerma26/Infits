@@ -1,6 +1,7 @@
 package hello.tech.infits.View;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -40,6 +41,12 @@ public class Tracker extends AppCompatActivity {
         binding.launch.setOnClickListener(v -> {
             LaunchFragment fragment=new LaunchFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment,fragment). commit();
+        });
+        binding.snacks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
         });
     }
 }
