@@ -89,6 +89,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,18 +98,18 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="vertical">
             <!--first row-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_height="145dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="166dp"
                     android:layout_marginStart="20dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/logo"
@@ -116,6 +117,7 @@
                     tools:ignore="ImageContrastCheck" />
 
                 <ImageView
+                    android:layout_marginEnd="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -126,7 +128,7 @@
             <!--        Second row-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_height="145dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
@@ -142,6 +144,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
                     android:contentDescription="@string/logo"
                     android:src="@drawable/trackerbox"
                     tools:ignore="ImageContrastCheck" />
@@ -152,7 +155,7 @@
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_height="145dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
@@ -169,6 +172,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:contentDescription="@string/logo"
+                    android:layout_marginEnd="20dp"
                     android:src="@drawable/chatselected"
                     tools:ignore="ImageContrastCheck" />
 
@@ -176,7 +180,7 @@
 
             <ImageView
                 android:layout_width="290dp"
-                android:layout_height="110dp"
+                android:layout_height="111dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/logo"
                 android:layout_margin="25dp"

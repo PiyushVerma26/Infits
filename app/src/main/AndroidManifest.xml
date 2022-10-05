@@ -23,19 +23,20 @@
             android:exported="true" />
         <activity
             android:name=".View.GraphClient"
-            android:exported="true">
+            android:exported="true"/>
+
+        <activity
+            android:name=".View.Metrices"
+            android:exported="true" />
+        <activity
+            android:name=".View.ClientDetail"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".View.Metrices"
-            android:exported="true" />
-        <activity
-            android:name=".View.ClientDetail"
-            android:exported="true" />
         <activity
             android:name=".View.HomeNavigation"
             android:exported="true"
