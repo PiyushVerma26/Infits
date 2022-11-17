@@ -8,6 +8,8 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/arrowup.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/backbtn.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/btnback.xml" value="0.123" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/btnplan.xml" value="0.1465" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/btnsave.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/calorietrackback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/chartmetrics.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/chat.xml" value="0.1415" />
@@ -28,6 +30,8 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/dietlist.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/eatback.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/edit.xml" value="0.123" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/editback.xml" value="0.1465" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/genderback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/healthback.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/healthdetailbox.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/healthtextselected.xml" value="0.1415" />
@@ -39,6 +43,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/invitebtn.xml" value="0.1065" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/layoutback.xml" value="0.1415" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/line.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/loginback.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/metrics.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/metricsback.xml" value="0.1415" />
@@ -57,6 +62,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/sleepsgrad.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/splash.xml" value="0.123" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/steps.xml" value="0.1465" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/stepsback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/stepsgrad.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/stepspregress.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/textclentcolor.xml" value="0.1415" />
@@ -67,6 +73,7 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/trackerbox.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/trackerspoon.xml" value="0.1415" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/trackertextselected.xml" value="0.1415" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/waterback.xml" value="0.1465" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/watergrad.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/weightgrad.xml" value="0.1365" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/drawable/weighttrackback.xml" value="0.1465" />
@@ -78,6 +85,8 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_about.xml" value="0.264" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_achievements_completed.xml" value="0.22521367521367522" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_achivements.xml" value="0.2" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_add_client.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_add_plan.xml" value="0.22245673279864922" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_client_detail.xml" value="0.21037998146431883" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_cliet_profile.xml" value="0.21944444444444444" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/activity_detailed.xml" value="0.22530996152201796" />
@@ -102,12 +111,28 @@
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/content_navigation.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/day.xml" value="0.13541666666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/food.xml" value="0.18518518518518517" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_appointments.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_breakfast_fragmnet.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_calorie.xml" value="0.21376656690893545" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_chats.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_client_list.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_dash_board.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_diet_breakfast.xml" value="0.2604166666666667" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_gallery.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_heart.xml" value="0.21376656690893545" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_home.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_launch.xml" value="0.2604166666666667" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_live.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_mail.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_new_recipie.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_recepies.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_setting.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_sleep.xml" value="0.21376656690893545" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_slideshow.xml" value="0.22530996152201796" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_snacks.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_steps.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_water.xml" value="0.22530996152201796" />
+        <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/fragment_weight.xml" value="0.21376656690893545" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/invite.xml" value="0.2" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/nav_header_home_navigation.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Projects/INFITS/app/src/main/res/layout/nav_header_navigation.xml" value="0.27447916666666666" />

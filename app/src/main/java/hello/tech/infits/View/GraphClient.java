@@ -1,39 +1,99 @@
 package hello.tech.infits.View;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import java.util.ArrayList;
-
-import hello.tech.infits.Adapters.GraphAdapter;
-import hello.tech.infits.Modals.GraphModal;
+import hello.tech.infits.Fragments.Steps;
+import hello.tech.infits.Fragments.calorieFragment;
+import hello.tech.infits.Fragments.heartFragment;
+import hello.tech.infits.Fragments.sleepFragment;
+import hello.tech.infits.Fragments.waterFragment;
+import hello.tech.infits.Fragments.weightFragment;
+import hello.tech.infits.R;
 import hello.tech.infits.databinding.ActivityGraphClientBinding;
 
+
 public class GraphClient extends AppCompatActivity {
-ActivityGraphClientBinding binding;
-GraphAdapter adapter;
-ArrayList<GraphModal>list;
+    ActivityGraphClientBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityGraphClientBinding.inflate(getLayoutInflater());
+        binding = ActivityGraphClientBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        list=new ArrayList<>();
-        adapter=new GraphAdapter(list,this);
-        binding.recycle.setHasFixedSize(true);
-        binding.recycle.setLayoutManager(new LinearLayoutManager(this));
-        binding.recycle.setAdapter(adapter);
-        list.add(new GraphModal("SEP","18","Shake","85 ml","9:10 AM"));
-        list.add(new GraphModal("SEP","17","Dinner","100 ml","9:15 AM"));
-        binding.viewAllItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(GraphClient.this,ViewAll.class));
-            }
+
+//        Steps
+        binding.steps.setOnClickListener(
+                v -> {
+                    binding.steps.setBackgroundResource(R.drawable.img_17);
+                    binding.water.setBackgroundResource(R.drawable.img_14);
+                    binding.sleep.setBackgroundResource(R.drawable.img_20);
+                    binding.weightTrack.setBackgroundResource(R.drawable.img_22);
+                    binding.calorieTrack.setBackgroundResource(R.drawable.img_24);
+                    binding.heartRate.setBackgroundResource(R.drawable.img_19);
+                    Steps fragment = new Steps();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, fragment).commit();
+                });
+
+
+//        water
+        binding.water.setOnClickListener(v -> {
+            binding.water.setBackgroundResource(R.drawable.img_15);
+            binding.steps.setBackgroundResource(R.drawable.img_16);
+            binding.sleep.setBackgroundResource(R.drawable.img_20);
+            binding.weightTrack.setBackgroundResource(R.drawable.img_22);
+            binding.calorieTrack.setBackgroundResource(R.drawable.img_24);
+            binding.heartRate.setBackgroundResource(R.drawable.img_19);
+            waterFragment waterfragment = new waterFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, waterfragment).commit();
         });
+
+
+//       calorie
+        binding.calorieTrack.setOnClickListener(v -> {
+            binding.water.setBackgroundResource(R.drawable.img_14);
+            binding.steps.setBackgroundResource(R.drawable.img_16);
+            binding.sleep.setBackgroundResource(R.drawable.img_20);
+            binding.weightTrack.setBackgroundResource(R.drawable.img_22);
+            binding.calorieTrack.setBackgroundResource(R.drawable.img_25);
+            binding.heartRate.setBackgroundResource(R.drawable.img_19);
+            calorieFragment calorie = new calorieFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, calorie).commit();
+        });
+//        Sleep
+        binding.sleep.setOnClickListener(v -> {
+            binding.water.setBackgroundResource(R.drawable.img_14);
+            binding.steps.setBackgroundResource(R.drawable.img_16);
+            binding.sleep.setBackgroundResource(R.drawable.img_21);
+            binding.weightTrack.setBackgroundResource(R.drawable.img_22);
+            binding.calorieTrack.setBackgroundResource(R.drawable.img_24);
+            binding.heartRate.setBackgroundResource(R.drawable.img_19);
+            sleepFragment sleep = new sleepFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, sleep).commit();
+        });
+//        Weight
+        binding.weightTrack.setOnClickListener(v -> {
+            binding.water.setBackgroundResource(R.drawable.img_14);
+            binding.steps.setBackgroundResource(R.drawable.img_16);
+            binding.sleep.setBackgroundResource(R.drawable.img_20);
+            binding.weightTrack.setBackgroundResource(R.drawable.img_23);
+            binding.calorieTrack.setBackgroundResource(R.drawable.img_24);
+            binding.heartRate.setBackgroundResource(R.drawable.img_19);
+            weightFragment weight = new weightFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, weight).commit();
+        });
+// heartRate
+        binding.heartRate.setOnClickListener(v -> {
+            binding.water.setBackgroundResource(R.drawable.img_14);
+            binding.steps.setBackgroundResource(R.drawable.img_16);
+            binding.sleep.setBackgroundResource(R.drawable.img_20);
+            binding.weightTrack.setBackgroundResource(R.drawable.img_22);
+            binding.calorieTrack.setBackgroundResource(R.drawable.img_24);
+            binding.heartRate.setBackgroundResource(R.drawable.img_18);
+            heartFragment heart = new heartFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.clientFragments, heart).commit();
+        });
+
     }
 }

@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:navigationIcon="@drawable/ic_baseline_menu_24">
+        app:navigationIcon="@drawable/backarrow">
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,478 +46,108 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <!--calender section-->
     <HorizontalScrollView
         android:id="@+id/scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:background="@color/white"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/white"
-
             android:orientation="horizontal">
             <!--steps-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/steps"
+                android:layout_width="64dp"
                 android:layout_height="80dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/stepsback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/foot"
-                    tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/steps"
-                    android:textColor="#FF7B44"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/img_17"
+                android:contentDescription="@string/logo"
+                tools:ignore="ImageContrastCheck" />
             <!--heart rate-->
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <ImageView
+                android:id="@+id/heartRate"
                 android:layout_width="64dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/heartrateback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
+                android:contentDescription="@string/logo" />
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/colorheart"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="-15dp"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/hrt"
-                    android:textAlignment="center"
-                    android:textColor="#E266A9"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/rate"
-                    android:textAlignment="center"
-                    android:textColor="#E266A9"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
             <!--            water-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/water"
+                android:layout_width="64dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/waterback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/waterdrops"
-                    tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/water"
-                    android:textColor="#278EFF"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                android:contentDescription="@string/logo"
+                tools:ignore="ImageContrastCheck" />
 
             <!--            Sleep-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/sleep"
+                android:layout_width="64dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/sleepback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/sleep"
-                    tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:textColor="#7D5DE6"
-                    android:text="@string/sleep"
-                    android:textSize="12sp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                android:contentDescription="@string/logo" />
             <!--            weightTrack-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/weightTrack"
+                android:layout_width="64dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/weighttrackback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/weighttrack"
-                    tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/weight"
-                    android:textColor="#54AFAC"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/trac"
-                    android:layout_marginTop="-15dp"
-                    android:textAlignment="center"
-                    android:textColor="#54AFAC"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                android:contentDescription="@string/logo"
+                tools:ignore="ImageContrastCheck" />
             <!--calorieTrack-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/calorieTrack"
+                android:layout_width="64dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/calorietrackback"
-                android:gravity="center"
-                android:minWidth="64dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/kcal"
-                    tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/cal"
-                    android:textColor="#E3738D"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nats"
-                    android:text="@string/trac"
-                    android:layout_marginTop="-15dp"
-                    android:textAlignment="center"
-                    android:textColor="#E3738D"
-                    android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
+                android:contentDescription="@string/logo"
+                tools:ignore="ImageContrastCheck" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </HorizontalScrollView>
-    <!--calender section-->
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/calender"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scroll">
-
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/clientFragments"
+        android:name="hello.tech.infits.Fragments.Steps"
         android:layout_width="wrap_content"
-        android:layout_height="184dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calender" />
-
-    <RelativeLayout
-        android:id="@+id/count"
-        android:layout_width="224dp"
-        android:layout_height="224dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lineChart">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerVertical="true"
-            android:background="@drawable/line" />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/line" />
-
-        <!--daily count-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/dailyCount"
-            android:layout_width="wrap_content"
-            android:layout_height="96dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
-            android:minWidth="82dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/nats"
-                android:text="@string/daily_count"
-                android:textColor="#5D5D5D"
-                android:textSize="19sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/_8"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/glasses"
-                android:textColor="#5D5D5D"
-                android:textSize="17sp" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-        <!--        weekly-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="96dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
-            android:minWidth="84dp"
-            android:orientation="vertical"
-            tools:ignore="RelativeOverlap">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/nats"
-                android:text="@string/weekly_avg"
-                android:textColor="#5D5D5D"
-                android:textSize="19sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/_8"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/glasses"
-                android:textColor="#5D5D5D"
-                android:textSize="17sp" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-        <!--        monthly-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="96dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
-            android:minWidth="82dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/nats"
-                android:text="@string/monthly"
-                android:textColor="#5D5D5D"
-                android:textSize="19sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/_8"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/glasses"
-                android:textColor="#5D5D5D"
-                android:textSize="17sp" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-        <!--        total-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="96dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
-            android:minWidth="82dp"
-            android:orientation="vertical"
-            tools:ignore="RelativeOverlap">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/nats"
-                android:text="@string/total"
-                android:textColor="#5D5D5D"
-                android:textSize="19sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/_8"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-25dp"
-                android:fontFamily="@font/nats"
-                android:text="@string/glasses"
-                android:textColor="#5D5D5D"
-                android:textSize="17sp" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </RelativeLayout>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/past"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginStart="15dp"
-            android:fontFamily="@font/nats"
-            android:text="@string/past_activity"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/viewAllItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:fontFamily="@font/nats"
-            android:text="@string/view_all"
-            android:textColor="#2196F3"
-            android:textSize="20sp" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recycle"
+        tools:layout="@layout/fragment_steps"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/past"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/calender"
+        android:layout_height="wrap_content" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

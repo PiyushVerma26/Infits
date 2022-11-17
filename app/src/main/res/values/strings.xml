@@ -151,5 +151,24 @@
     <string name="_370_kcal">370 Kcal</string>
     <string name="_19_jun_2021">19 Jun 2021</string>
     <string name="_5_30_pm">5:30 PM</string>
+    <string name="add_client">Add Client</string>
+    <string name="gender">Gender</string>
+    <string name="phone">Phone no.</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weigh">Weight</string>
+    <string name="abou">About</string>
+    <string name="plan">Plan</string>
+    <string name="select">Select</string>
+    <string name="save">Save</string>
+    <string name="add_plan">Add Plan</string>
+    <string name="you_have_not">You Have not</string>
+    <string name="created_any_plan_yet">created any plan yet</string>
+    <string name="year">Year</string>
+    <string name="custom_dates">Custom Dates</string>
+    <string name="month">Month</string>
+    <string name="week">Week</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
 
 </resources>

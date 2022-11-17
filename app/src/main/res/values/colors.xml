@@ -13,4 +13,6 @@
     <color name="tracker">#76A5FF</color>
     <color name="health">#1FB688</color>
     <color name="chats">#FFA381</color>
+    <color name="steps">#FFA381</color>
+    <color name="transparent">#0000C853</color>
 </resources>

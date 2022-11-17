@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragments.waterFragment">
+        <RadioGroup
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/lineChart"
+            android:id="@+id/toggle"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/outline"
+            android:checkedButton="@+id/week_btn_steps"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginHorizontal="25dp">
+
+            <RadioButton
+                android:id="@+id/customdates_btn_steps"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/switch_steps_left"
+                android:button="@null"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:text="@string/custom_dates"
+                android:textSize="10sp"
+                android:textColor="@drawable/switch_text"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/year_btn_steps"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/switch_off"
+                android:button="@null"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textColor="@drawable/switch_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/month_btn_steps"
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/switch_off"
+                android:button="@null"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:text="@string/month"
+                android:textColor="@drawable/switch_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/week_btn_steps"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/switch_steps_right"
+                android:button="@null"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:text="@string/week"
+                android:textColor="@drawable/switch_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck,TextContrastCheck" />
+        </RadioGroup>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="wrap_content"
+            android:layout_height="184dp"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toTopOf="@id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/count"
+            android:layout_width="224dp"
+            android:layout_height="224dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineChart">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/line" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/line" />
+
+            <!--daily count-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/dailyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:minWidth="82dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/daily_count"
+                    android:textColor="#5D5D5D"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/_8"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/glasses"
+                    android:textColor="#5D5D5D"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--        weekly-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:minWidth="84dp"
+                android:orientation="vertical"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/weekly_avg"
+                    android:textColor="#5D5D5D"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/_8"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/glasses"
+                    android:textColor="#5D5D5D"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--        monthly-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:minWidth="82dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/monthly"
+                    android:textColor="#5D5D5D"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/_8"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/glasses"
+                    android:textColor="#5D5D5D"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--        total-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:minWidth="82dp"
+                android:orientation="vertical"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/total"
+                    android:textColor="#5D5D5D"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/_8"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-25dp"
+                    android:fontFamily="@font/nats"
+                    android:text="@string/glasses"
+                    android:textColor="#5D5D5D"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/past"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/count">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/nats"
+                android:text="@string/past_activity"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/viewAllItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/nats"
+                android:text="@string/view_all"
+                android:textColor="#2196F3"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/past" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

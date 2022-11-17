@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_nav"
+    app:startDestination="@id/dashboard">
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="hello.tech.infits.Fragments.DashBoardFragment"
+        android:label="DashBoard"
+        tools:layout="@layout/fragment_dash_board">
+        <action
+            android:id="@+id/action_dashboard_to_steps"
+            app:destination="@id/steps" />
+        <action
+            android:id="@+id/action_dashboard_to_heartFragment"
+            app:destination="@id/heartFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_waterFragment"
+            app:destination="@id/waterFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_sleepFragment"
+            app:destination="@id/sleepFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_weightFragment"
+            app:destination="@id/weightFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/steps"
+        android:name="hello.tech.infits.Fragments.Steps"
+        android:label="Steps"
+        tools:layout="@layout/fragment_steps">
+        <action
+            android:id="@+id/action_steps_to_heartFragment"
+            app:destination="@id/heartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calorieFragment"
+        android:name="hello.tech.infits.Fragments.calorieFragment"
+        android:label="calorieFragment"
+        tools:layout="@layout/fragment_calorie"/>
+    <fragment
+        android:id="@+id/sleepFragment"
+        android:name="hello.tech.infits.Fragments.sleepFragment"
+        android:label="sleepFragment"
+        tools:layout="@layout/fragment_sleep">
+        <action
+            android:id="@+id/action_sleepFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="hello.tech.infits.Fragments.weightFragment"
+        android:label="weightFragment"
+        tools:layout="@layout/fragment_weight">
+        <action
+            android:id="@+id/action_weightFragment_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heartFragment"
+        android:name="hello.tech.infits.Fragments.heartFragment"
+        android:label="heartFragment"
+        tools:layout="@layout/fragment_heart">
+        <action
+            android:id="@+id/action_heartFragment_to_waterFragment"
+            app:destination="@id/waterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterFragment"
+        android:name="hello.tech.infits.Fragments.waterFragment"
+        android:label="waterFragment"
+        tools:layout="@layout/fragment_water">
+        <action
+            android:id="@+id/action_waterFragment_to_sleepFragment"
+            app:destination="@id/sleepFragment" />
+    </fragment>
+</navigation>

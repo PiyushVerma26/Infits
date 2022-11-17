@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/dashboard"
         android:name="hello.tech.infits.Fragments.DashBoardFragment"
-        android:label="@string/dashboard"
+        android:label="@string/client_profile"
         tools:layout="@layout/fragment_dash_board" >
         <action
             android:id="@+id/action_dashboard_to_Chats"

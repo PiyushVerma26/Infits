@@ -18,21 +18,19 @@
             android:background="@color/white"
             app:titleTextColor="@color/black"
             app:navigationIcon="@drawable/ic_baseline_menu_24"
-            app:popupTheme="@style/Theme.INFITS.PopupOverlay" />
+            app:popupTheme="@style/Theme.INFITS.PopupOverlay" >
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="-15dp"
+                android:layout_gravity="end"
+                android:src="@drawable/notification"
+                tools:ignore="ContentDescription" />
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_home_navigation" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/logo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
